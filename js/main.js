@@ -14,7 +14,7 @@ console.log(randomNumber);
 
 const validNumber = () => {
   const valueNumber = numberInput.value;
-  if (parseInt(valueNumber) < 0 || parseInt(valueNumber) > 100) {
+  if (parseInt(valueNumber) < 1 || parseInt(valueNumber) > 100) {
     clueParagraph.innerHTML = `El número debe estar entre 1 y 100`;
   }
 };
