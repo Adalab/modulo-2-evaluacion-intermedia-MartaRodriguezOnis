@@ -30,10 +30,21 @@ const showMessage = () => {
   }
 };
 
+let counter = 0;
+function addCounter() {
+  const valueNumber = numberInput.value;
+  if (parseInt(valueNumber) !== parseInt(randomNumber)) {
+    counter += 1;
+    attemptParagraph.innerHTML = `Número de intentos: ${counter}`;
+  }
+  return counter;
+}
+
 function handleClick(ev) {
   ev.preventDefault();
   showMessage();
   validNumber();
+  addCounter();
 }
 
 testButton.addEventListener("click", handleClick);
