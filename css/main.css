@@ -55,3 +55,13 @@
   border: solid 3px var(--color-border);
   width: 470px;
 }
+.form__btnReset {
+  font-size: 18px;
+  background-color: rgb(244, 128, 128);
+  color: var(--color-white);
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 40px;
+  margin-bottom: 20px;
+}
